@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #060d38;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 0.5em;
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffba08;
+}
+
+.title2 {
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffba08;
+}
+
+.title3 {
+  font-size: 1.9em;
+  margin-bottom: 0.5em;
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffba08;
+}
+
+.start-btn {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3em;
+  padding: 10px;
+  border-radius: 15px;
+  border: 3px solid #03071e;
+  cursor: pointer;
+}
+
+.name-input {
+  padding: 5px;
+  margin-bottom: 15px;
+  margin-top: 3px;
+  border: 3px solid #03071e;
+}
+
+.submit-btn {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  padding: 5px;
+  border: 3px solid #03071e;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.option-btn {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  padding: 5px;
+  margin: 10px 0 10px 0;
+  border: 3px solid #03071e;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+form {
+  display: none;
+}
+
+.board-cells {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 5px solid #03071e;
+  border-radius: 3%;
+  display: none;
+}
+
+.game-board {
+  width: 30.75em;
+  height: 30.75em;
+  background-color: #62040d;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.winner-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 15em;
+  height: 15em;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 40px 40px 20px 40px;
+  border-radius: 15%;
+  display: none;
+}
+
+.cell {
+  width: 10em;
+  height: 10em;
+  background-color: #62040d;
+  border: 2px solid #03071e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+span {
+  color: #ffba0a;
+  font-size: 3.5rem;
+  cursor: pointer;
+}
