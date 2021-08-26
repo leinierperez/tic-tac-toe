@@ -8,6 +8,49 @@
     <link rel="stylesheet" href="/styles/main.css" />
   </head>
   <body>
+    <div class="title">Tic Tac Toe</div>
+
+    <div class="game-board">
+      <button class="start-btn">Start Game</button>
+
+      <form action="#">
+        <p class="title2">Player1</p>
+        <input
+          type="text"
+          class="name-input"
+          id="player1-name"
+          name="p1-name"
+          required
+        />
+        <p class="title2" id="p2">Player2</p>
+        <input
+          type="text"
+          class="name-input"
+          id="player2-name"
+          name="p2-name"
+          required
+        /><br />
+        <input class="submit-btn" type="submit" value="Submit" />
+      </form>
+
+      <div class="board-cells">
+        <div class="cell"><span data-key="0,0"></span></div>
+        <div class="cell"><span data-key="0,1"></span></div>
+        <div class="cell"><span data-key="0,2"></span></div>
+        <div class="cell"><span data-key="1,0"></span></div>
+        <div class="cell"><span data-key="1,1"></span></div>
+        <div class="cell"><span data-key="1,2"></span></div>
+        <div class="cell"><span data-key="2,0"></span></div>
+        <div class="cell"><span data-key="2,1"></span></div>
+        <div class="cell"><span data-key="2,2"></span></div>
+      </div>
+
+      <div class="winner-menu">
+        <p class="title3"></p>
+        <button class="option-btn" id="restart-btn">Restart</button>
+        <button class="option-btn" id="newgame-btn">New Game</button>
+      </div>
+    </div>
     <script src="/scripts/app.js"></script>
   </body>
 </html>
